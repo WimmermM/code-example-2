@@ -30,14 +30,13 @@ Detailed info is in the language specific description.
 
 All classes should import the following database:
 
-| c# | java | javascript |
+| java | javascript |
 |-----|-----|-----|
-|[attractions_cs.sql](assets/attractions_cs.sql)|[attractions_java.sql](assets/attractions.sql)|[attractions_js.sql](assets/attractions.sql)|
+|[attractions_java.sql](assets/attractions.sql)|[attractions_js.sql](assets/attractions.sql)|
 
 CREATE A SCREENSHOT OF THE DATABASE YOU IMPORTED AND COMMIT IT TO THE REPO
 
 ## 2) Continue with your class' language:
 
- -  [C#](javacs.md)
  -  [Java](javacs.md)
  -  [JavaSript](js.md)
