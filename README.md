@@ -31,7 +31,7 @@ Detailed info is in the language specific description.
 All classes should import the following database:
 
 | java | javascript |
-|-----|-----|-----|
+|-----|-----|
 |[attractions_java.sql](assets/attractions.sql)|[attractions_js.sql](assets/attractions.sql)|
 
 CREATE A SCREENSHOT OF THE DATABASE YOU IMPORTED AND COMMIT IT TO THE REPO
