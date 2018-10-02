@@ -1,10 +1,10 @@
 USE master;
 
-DROP DATABASE IF EXISTS MacrotisOrientationExam;
+DROP DATABASE IF EXISTS AlopexOrientationExam;
 
-CREATE DATABASE MacrotisOrientationExam;
+CREATE DATABASE AlopexOrientationExam;
 
-USE MacrotisOrientationExam;
+USE AlopexOrientationExam;
 
 CREATE TABLE attractions (
     id INT NOT NULL AUTO_INCREMENT,

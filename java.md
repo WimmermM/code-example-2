@@ -25,14 +25,14 @@ This endpoint should render the main page with prefilled attraction details in t
  -  list all known attractions in a table
  -  has form to edit the attraction specified by id
  
-### GET `/attractions`
+### GET `/budge`
 This endpoint should:
- -  returns a list of all filtered attractions(category, city)
- -  if no filter provided, return all attraction
+ -  returns a list of the cheepest row out of the following categories (1 item each):
+    - restaurant
+    - park
+    - museum
 
-example query: 
- -  `http://localhost:12345/attractions?category=restaurant&city=budapest`
-
+example answer:
 ```json
 {
     "result": "ok",
@@ -60,6 +60,17 @@ example query:
             "category": "restaurant",
             "duration": 10.0,
             "recommendedAge": 3
+        },
+        {
+            "id": 4,
+            "name": "Heroes' Square",
+            "city": "Budapest",
+            "price": 0,
+            "Lattitude": 19.060100,
+            "logitude": 47.484110,
+            "category": "park",
+            "duration": 30,
+            "reccomendedAge": 3
         }
     ]
 }

@@ -45,40 +45,53 @@ This endpoint should
 }
 ```
   
-### GET `/attractions`
+### GET `/budge`
 This endpoint should:
- -  returns a list of all filtered attractions(category, city)
- -  if no filter provided, return all attraction
+ -  returns a list of the cheepest row out of the following categories (1 item each):
+    - restaurant
+    - park
+    - museum
 
-example query: 
- -  `http://localhost:12345/attractions?category=restaurant&city=budapest`
-
- ```json
- [
-     {
-         "id": 1,
-         "name": "Kerkyra",
-         "city": "Budapest",
-         "price": 1800,
-         "lattitude": 47.484174,
-         "longitude": 19.060234,
-         "category": "restaurant",
-         "duration": 10.0,
-         "recommendedAge": 3
-     },
-     {
-         "id": 2,
-         "name": "Pulitzer",
-         "city": "Budapest",
-         "price": 1200,
-         "lattitude": 47.484162,
-         "longitude": 19.060225,
-         "category": "restaurant",
-         "duration": 10.0,
-         "recommendedAge": 3
-     }
- ]
- ```
+example answer:
+```json
+{
+     [
+        {
+            "id": 2,
+            "name": "House of Terror",
+            "city": "Budapest",
+            "price": 3000,
+            "lattitude": 47.484110,
+            "longitude": 19.060172,
+            "category": "museum",
+            "duration": 120,
+            "recommendedAge": 3
+        },
+        {
+            "id": 3,
+            "name": "Pulitzer",
+            "city": "Budapest",
+            "price": 1200,
+            "lattitude": 47.484162,
+            "longitude": 19.060225,
+            "category": "restaurant",
+            "duration": 10.0,
+            "recommendedAge": 3
+        },
+        {
+            "id": 4,
+            "name": "Heroes' Square",
+            "city": "Budapest",
+            "price": 0,
+            "Lattitude": 19.060100,
+            "logitude": 47.484110,
+            "category": "park",
+            "duration": 30,
+            "reccomendedAge": 3
+        }
+    ]
+}
+```
 
 ## 2) Question time
  -  Write an SQL query to get all `Renault` which more expensive than 8000
