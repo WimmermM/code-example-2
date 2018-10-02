@@ -1,4 +1,4 @@
-# Macrotis Orientation Exam
+# Alopex Orientation Exam
 
 You will have to create an information application for tourists
 
@@ -38,5 +38,5 @@ CREATE A SCREENSHOT OF THE DATABASE YOU IMPORTED AND COMMIT IT TO THE REPO
 
 ## 2) Continue with your class' language:
 
- -  [Java](javacs.md)
+ -  [Java](java.md)
  -  [JavaSript](js.md)

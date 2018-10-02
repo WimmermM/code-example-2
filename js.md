@@ -51,7 +51,7 @@ This endpoint should:
  -  if no filter provided, return all attraction
 
 example query: 
- -  `http://localhost:12345/filter?category=restaurant&city=budapest`
+ -  `http://localhost:12345/attractions?category=restaurant&city=budapest`
 
  ```json
  [
