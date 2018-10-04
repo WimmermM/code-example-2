@@ -1,5 +1,3 @@
-USE master;
-
 DROP DATABASE IF EXISTS AlopexOrientationExam;
 
 CREATE DATABASE AlopexOrientationExam;
@@ -13,12 +11,12 @@ CREATE TABLE attractions (
     category VARCHAR(30),
     price INT,
     longitude FLOAT,
-    lattitude FLOAT,
+    latitude FLOAT,
     recommended_age FLOAT,
     duration INT,
     PRIMARY KEY (id));
 
-INSERT INTO attractions(attr_name, city, category, price, longitude, lattitude, recommended_age, duration)
+INSERT INTO attractions(attr_name, city, category, price, longitude, latitude, recommended_age, duration)
 VALUES ('Kerkyra', 'Budapest', 'restaurant', 1800, 47.484174, 19.060234, 3, 60),
        ('House of Terror', 'Budapest', 'museum', 3000, 47.484110, 19.060172, 3, 120),
        ('Pulitzer', 'Budapest', 'restaurant', 1200, 47.48407, 19.060181, 3, 60),
