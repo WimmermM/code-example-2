@@ -48,6 +48,8 @@ A new attraction is saved:
   "id": 1
 }
 ```
+
+### GET `/budge`
   
 The list containing the cheapest attractions of the following categories are returned in **JSON** format:
 - restaurant
