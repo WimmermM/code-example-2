@@ -1,4 +1,4 @@
-# Alopex Orientation Exam
+# Prague Vulpes Orientation Exam
 
 ## Tourist Information
 
@@ -30,7 +30,7 @@ The main page is rendered with the form prefilled with the attraction details:
 -  all known attractions are listed in a table
 -  a form is displayed to edit the attraction specified by the `id`
  
-### GET `/budge`
+### GET `/budget`
 
 The list containing the cheapest attractions of the following categories are returned in **JSON** format:
 - restaurant
@@ -40,41 +40,41 @@ The list containing the cheapest attractions of the following categories are ret
 example answer:
 ```json
 {
-    "attractions": [
-        {
-            "id": 3,
-            "name": "Pulitzer",
-            "city": "Budapest",
-            "price": 1200,
-            "longitude": 47.4841,
-            "latitude": 19.0602,
-            "category": "restaurant",
-            "duration": 60,
-            "recommendedAge": 3
-        },
-        {
-            "id": 4,
-            "name": "Heroes' Square",
-            "city": "Budapest",
-            "price": 0,
-            "longitude": 47.4841,
-            "latitude": 19.0601,
-            "category": "park",
-            "duration": 30,
-            "recommendedAge": 3
-        },
-        {
-            "id": 2,
-            "name": "House of Terror",
-            "city": "Budapest",
-            "price": 3000,
-            "longitude": 47.4841,
-            "latitude": 19.0602,
-            "category": "museum",
-            "duration": 120,
-            "recommendedAge": 3
-        }
-    ]
+  "attractions": [
+    {
+      "id": 1,
+      "attr_name": "Svetozor",
+      "city": "Prague",
+      "category": "restaurant",
+      "price": 110,
+      "longitude": 50.0818,
+      "latitude": 14.4231,
+      "recommended_age": 3,
+      "duration": 60
+    },
+    {
+      "id": 4,
+      "attr_name": "Frantiskanska zahrada",
+      "city": "Prague",
+      "category": "park",
+      "price": 0,
+      "longitude": 50.0832,
+      "latitude": 14.4239,
+      "recommended_age": 3,
+      "duration": 30
+    },
+    {
+      "id": 2,
+      "attr_name": "Narodni Muzeum",
+      "city": "Prague",
+      "category": "museum",
+      "price": 300,
+      "longitude": 50.0808,
+      "latitude": 14.4254,
+      "recommended_age": 3,
+      "duration": 120
+    }
+  ]
 }
 ```
  
@@ -86,4 +86,4 @@ example answer:
 ## optional) Endpoint Testing
 -  Create a test case for each endpoint to test if the returned status code is `200 OK`
 -  Create a test case for a non-existing endpoint to test if the returned status code is `404 Not Found`
--  Create a test case for the `/budge` endpoint to test if the correct attractions are returned
+-  Create a test case for the `/budget` endpoint to test if the correct attractions are returned

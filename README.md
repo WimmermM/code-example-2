@@ -1,4 +1,4 @@
-# Alopex Orientation Exam
+# Prague Vulpes Orientation Exam
 
 You have to create an information application for tourists.
 
@@ -32,13 +32,12 @@ Please find the detailed instructions in the language specific description.
 
 You have to import the following database:
 
-| java | javascript |
-|-----|-----|
-|[attractions_java.sql](assets/attractions.sql)|[attractions_js.sql](assets/attractions.sql)|
+| java |
+|-----|
+|[attractions_java.sql](assets/attractions.sql)|
 
 CREATE A SCREENSHOT OF THE DATABASE YOU IMPORTED AND COMMIT IT TO THE REPO
 
 ## 2) Continue with your class' language:
 
  -  [Java](java.md)
- -  [JavaSript](js.md)

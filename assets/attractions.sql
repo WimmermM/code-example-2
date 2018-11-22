@@ -17,8 +17,14 @@ CREATE TABLE attractions (
     PRIMARY KEY (id));
 
 INSERT INTO attractions(attr_name, city, category, price, longitude, latitude, recommended_age, duration)
-VALUES ('Kerkyra', 'Budapest', 'restaurant', 1800, 47.484174, 19.060234, 3, 60),
-       ('House of Terror', 'Budapest', 'museum', 3000, 47.484110, 19.060172, 3, 120),
-       ('Pulitzer', 'Budapest', 'restaurant', 1200, 47.48407, 19.060181, 3, 60),
-       ('Heroes'' Square', 'Budapest', 'park', 0, 47.484110, 19.060100, 3, 30),
-       ('Budapest Zoo and Botanical Garden', 'Budapest', 'park', 4000, 47.484090, 19.060100, 3, 180);
+VALUES ('Svetozor', 'Prague', 'restaurant', 110, 50.0818326, 14.4230702, 3, 60),
+       ('Narodni Muzeum', 'Prague', 'museum', 300, 50.0807999, 14.4253662, 3, 120),
+       ('Havelska Koruna', 'Prague', 'restaurant', 120, 50.085568,14.4208075, 3, 60),
+       ('Frantiskanska zahrada', 'Prague', 'park', 0, 50.0832293, 14.4239375, 3, 30),
+       ('Prague Zoo', 'Prague', 'park', 400, 50.1178458, 14.3971201, 3, 180);
+
+CREATE TABLE hibernate_sequence (
+    next_val BIGINT(20)
+);
+
+INSERT INTO hibernate_sequence VALUES (6);
