@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
+    <link rel="stylesheet" href="/stylesheet.css">
     <meta charset="UTF-8">
     <title>Main Page</title>
 </head>
@@ -19,9 +20,6 @@
         <th>Category</th>
         <th>Duration</th>
         <th>Recommended age</th>
-        <th></th>
-        <th></th>
-        <th></th>
     </tr>
     </thead>
     <tbody>
@@ -36,7 +34,6 @@
         <td th:text="${attraction.getRecommendedAge()}"></td>
     </tr>
     </tbody>
-
 </table>
 
 

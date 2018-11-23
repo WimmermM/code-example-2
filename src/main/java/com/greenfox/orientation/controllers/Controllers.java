@@ -62,7 +62,7 @@ public class Controllers {
         model.addAttribute("oldRecommendedAge",myRepository.findAllById(id).getRecommendedAge());
         model.addAttribute("oldDuration",myRepository.findAllById(id).getDuration());
 
-        return "redirect:/";
+        return "index";
     }
 
 }
