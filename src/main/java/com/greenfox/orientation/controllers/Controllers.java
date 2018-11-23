@@ -52,6 +52,7 @@ public class Controllers {
             return "index";
         }
 
+        model.addAttribute("listAll",myRepository.findAll());
         model.addAttribute("update","yes");
         model.addAttribute("oldName",myRepository.findAllById(id).getAttrName());
         model.addAttribute("oldCity",myRepository.findAllById(id).getCity());
