@@ -10,20 +10,20 @@ public class Attraction {
 
     @Id
     @GeneratedValue
-    int id;
+    Integer id;
     String atractionName;
     String city;
     String category;
-    int price;
-    float longitude;
-    float latitude;
-    float recommendedAge;
-    int duration;
+    Integer price;
+    Float longitude;
+    Float latitude;
+    Float recommendedAge;
+    Integer duration;
 
     public Attraction() {
     }
 
-    public Attraction(String atractionName, String city, String category, int price, float longitude, float latitude, float recommendedAge, int duration) {
+    public Attraction(String atractionName, String city, String category, Integer price, Float longitude, Float latitude, Float recommendedAge, Integer duration) {
         this.atractionName = atractionName;
         this.city = city;
         this.category = category;
@@ -34,11 +34,11 @@ public class Attraction {
         this.duration = duration;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
