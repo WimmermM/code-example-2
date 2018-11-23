@@ -6,13 +6,13 @@ import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface MyRepository extends CrudRepository<Attractions,Integer> {
+public interface MyRepository extends CrudRepository<Attractions, Integer> {
 
     List<Attractions> findAll();
 
     Attractions findAllById(Integer id);
 
-    @Query(value = "SELECT distinct * FROM attractions group by category order by  price LIMIT 3" ,nativeQuery = true)
+    @Query(value = "SELECT distinct * FROM attractions group by category order by  price LIMIT 3", nativeQuery = true)
     List<Attractions> myORderedlist();
 
 

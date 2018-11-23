@@ -42,31 +42,33 @@
     <form method="post" action="/add">
         <div>
             <label for="attrName">Name:</label><br>
-            <input id="attrName" type="text" name="attrName" th:value="${oldName} ? ${oldName} : ''">
+            <input id="attrName" type="text" name="attrName" th:value="${oldName} ? ${oldName} : ''" required>
         </div>
         <div>
             <label for="city">City:</label><br>
-            <input id="city" type="text" name="city" th:value="${oldCity} ? ${oldCity} : ''">
+            <input id="city" type="text" name="city" th:value="${oldCity} ? ${oldCity} : ''" required>
         </div>
         <div>
             <label for="price">Price:</label><br>
-            <input id="price" type="text" name="price" th:value="${oldPrice} ? ${oldPrice} : ''">
+            <input id="price" type="text" name="price" th:value="${oldPrice} ? ${oldPrice} : ''" required>
         </div>
         <div>
             <label for="longitude">Longitude:</label><br>
-            <input id="longitude" type="text" name="longitude" th:value="${oldLongitude} ? ${oldLongitude} : ''">
+            <input id="longitude" type="text" name="longitude" th:value="${oldLongitude} ? ${oldLongitude} : ''"
+                   required>
         </div>
         <div>
             <label for="latitude">Latitude:</label><br>
-            <input id="latitude" type="text" name="latitude" th:value="${oldLatitude} ? ${oldLatitude} : ''">
+            <input id="latitude" type="text" name="latitude" th:value="${oldLatitude} ? ${oldLatitude} : ''" required>
         </div>
         <div>
             <label for="duration">Duration:</label><br>
-            <input id="duration" type="text" name="duration" th:value="${oldDuration} ? ${oldDuration} : ''">
+            <input id="duration" type="text" name="duration" th:value="${oldDuration} ? ${oldDuration} : ''" required>
         </div>
         <div>
             <label for="recommendedAge">Recommended age:</label><br>
-            <input id="recommendedAge" type="text" name="recommendedAge" th:value="${oldRecommendedAge} ? ${oldRecommendedAge} : ''">
+            <input id="recommendedAge" type="text" name="recommendedAge"
+                   th:value="${oldRecommendedAge} ? ${oldRecommendedAge} : ''" required>
         </div>
         <div>
             <label for="category">Category:</label><br>
