@@ -6,12 +6,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Attraction {
+public class Attractions {
 
     @Id
     @GeneratedValue
     Integer id;
-    String atractionName;
+    String attrName;
     String city;
     String category;
     Integer price;
@@ -20,11 +20,11 @@ public class Attraction {
     Float recommendedAge;
     Integer duration;
 
-    public Attraction() {
+    public Attractions() {
     }
 
-    public Attraction(String atractionName, String city, String category, Integer price, Float longitude, Float latitude, Float recommendedAge, Integer duration) {
-        this.atractionName = atractionName;
+    public Attractions(String attrName, String city, String category, Integer price, Float longitude, Float latitude, Float recommendedAge, Integer duration) {
+        this.attrName = attrName;
         this.city = city;
         this.category = category;
         this.price = price;
@@ -42,12 +42,12 @@ public class Attraction {
         this.id = id;
     }
 
-    public String getAtractionName() {
-        return atractionName;
+    public String getAttrName() {
+        return attrName;
     }
 
-    public void setAtractionName(String atractionName) {
-        this.atractionName = atractionName;
+    public void setAtractionName(String attrName) {
+        this.attrName = attrName;
     }
 
     public String getCity() {
@@ -66,43 +66,43 @@ public class Attraction {
         this.category = category;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
-    public float getLongitude() {
+    public Float getLongitude() {
         return longitude;
     }
 
-    public void setLongitude(float longitude) {
+    public void setLongitude(Float longitude) {
         this.longitude = longitude;
     }
 
-    public float getLatitude() {
+    public Float getLatitude() {
         return latitude;
     }
 
-    public void setLatitude(float latitude) {
+    public void setLatitude(Float latitude) {
         this.latitude = latitude;
     }
 
-    public float getRecommendedAge() {
+    public Float getRecommendedAge() {
         return recommendedAge;
     }
 
-    public void setRecommendedAge(float recommendedAge) {
+    public void setRecommendedAge(Float recommendedAge) {
         this.recommendedAge = recommendedAge;
     }
 
-    public int getDuration() {
+    public Integer getDuration() {
         return duration;
     }
 
-    public void setDuration(int duration) {
+    public void setDuration(Integer duration) {
         this.duration = duration;
     }
 }

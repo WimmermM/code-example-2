@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Main Page</title>
 </head>
 <body>
+
+<h1>Tourist Information</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>City</th>
+        <th>Price</th>
+        <th>Longitude</th>
+        <th>Latitude</th>
+        <th>Category</th>
+        <th>Duration</th>
+        <th>Recommended age</th>
+        <th></th>
+        <th></th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="attraction :${listAll}">
+        <td th:text="${attraction.getAttrName()}"></td>
+        <td th:text="${attraction.getCity()}"></td>
+        <td th:text="${attraction.getPrice()}"></td>
+        <td th:text="${attraction.getLongitude()}"></td>
+        <td th:text="${attraction.getLatitude()}"></td>
+        <td th:text="${attraction.getCategory()}"></td>
+        <td th:text="${attraction.getDuration()}"></td>
+        <td th:text="${attraction.getRecommendedAge()}"></td>
+    </tr>
+    </tbody>
+
+</table>
+
+
+<h2>Add Attraction</h2>
+<div>
+    <form method="post" action="/">
+        <div>
+            <label for="attrName">Name:</label>
+            <input id="attrName" type="text" name="attrName">
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input id="city" type="text" name="city">
+        </div>
+        <div>
+            <label for="price">Price:</label>
+            <input id="price" type="number" name="price">
+        </div>
+        <div>
+            <label for="longitude">Longitude:</label>
+            <input id="longitude" type="number" name="longitude">
+        </div>
+        <div>
+            <label for="latitude">Latitude:</label>
+            <input id="latitude" type="number" name="latitude">
+        </div>
+        <div>
+            <label for="recommendedAge">Recommended age:</label>
+            <input id="recommendedAge" type="number" name="recommendedAge">
+        </div>
+        <div>
+            <label for="category">Category:</label>
+            <input id="category" type="text" name="category">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+
+
+    </form>
+
+
+</div>
 
 </body>
 </html>
