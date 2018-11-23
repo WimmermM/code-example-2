@@ -45,35 +45,35 @@
     <form method="post" action="/add">
         <div>
             <label for="attrName">Name:</label>
-            <input id="attrName" type="text" name="attrName">
+            <input id="attrName" type="text" name="attrName" th:value="${oldName} ? ${oldName} : ''">
         </div>
         <div>
             <label for="city">City:</label>
-            <input id="city" type="text" name="city">
+            <input id="city" type="text" name="city" th:value="${oldCity} ? ${oldCity} : ''">
         </div>
         <div>
             <label for="price">Price:</label>
-            <input id="price" type="text" name="price">
+            <input id="price" type="text" name="price" th:value="${oldPrice} ? ${oldPrice} : ''">
         </div>
         <div>
             <label for="longitude">Longitude:</label>
-            <input id="longitude" type="text" name="longitude">
+            <input id="longitude" type="text" name="longitude" th:value="${oldLongitude} ? ${oldLongitude} : ''">
         </div>
         <div>
             <label for="latitude">Latitude:</label>
-            <input id="latitude" type="text" name="latitude">
+            <input id="latitude" type="text" name="latitude" th:value="${oldLatitude} ? ${oldLatitude} : ''">
         </div>
         <div>
             <label for="duration">Duration:</label>
-            <input id="duration" type="text" name="duration">
+            <input id="duration" type="text" name="duration" th:value="${oldDuration} ? ${oldDuration} : ''">
         </div>
         <div>
             <label for="recommendedAge">Recommended age:</label>
-            <input id="recommendedAge" type="text" name="recommendedAge">
+            <input id="recommendedAge" type="text" name="recommendedAge" th:value="${oldRecommendedAge} ? ${oldRecommendedAge} : ''">
         </div>
         <div>
             <label for="category">Category:</label>
-            <input id="category" type="text" name="category">
+            <input id="category" type="text" name="category" th:value="${oldCategory} ? ${oldCategory} : ''">
         </div>
         <div>
             <button type="submit">Submit</button>

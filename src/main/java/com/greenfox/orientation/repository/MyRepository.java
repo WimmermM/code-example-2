@@ -9,5 +9,7 @@ public interface MyRepository extends CrudRepository<Attractions,Integer> {
 
     List<Attractions> findAll();
 
+    Attractions findAllById(Integer id);
+
 
 }
