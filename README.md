@@ -41,3 +41,9 @@ CREATE A SCREENSHOT OF THE DATABASE YOU IMPORTED AND COMMIT IT TO THE REPO
 ## 2) Continue with your class' language:
 
  -  [Java](java.md)
+
+ 
+ Answers for questions
+ select * from CarsForSale where manufacturerName = "Renault" and acquisitionPrice >8000
+ 
+ update CarsForSale set acquisitionPrice = aacquisitionPrice-100 where manufacturerName = Volkswagen
